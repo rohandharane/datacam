@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Data Capture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-info">
+            <div class="coordinates">48.8584, 2.2945</div>
+            <div class="data-source">DATA_SRC: Vol.1</div>
+        </div>
+        
+        <div class="filter-panel">
+            <div class="filter-name">HISTORICAL</div>
+            <div class="filter-indicator"></div>
+        </div>
+
+        <div class="data-panel">
+            <div class="data-content">
+                <div class="data-header">MONASTERY, HOSPITAL</div>
+                <div class="data-subheader">TURNED INFRASTRUCTURE</div>
+                <div class="data-text">
+                    In the 1800s, this was converted into a psychiatric hospital and
+                    was designated as a residential institution. Later it was a 
+                    structure run by the mental-ill Jehovah's witnesses.
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-controls">
+            <button id="capture-btn" class="capture-btn">CAPTURE</button>
+        </div>
+    </div>
+
+    <div id="session-info" class="session-info">
+        <div class="session-count">SESSION: 1</div>
+        <div class="version">V1.0</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
